@@ -2,10 +2,9 @@
   "name": "1_faq-accordion-card-main",
   "version": "1.0.0",
   "description": "my solution to this challenge",
-  "main": "index.html",
   "scripts": {
     "start": "parcel index.html --no-cache",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html"
   },
   "author": "Mayank M",
   "license": "ISC",
