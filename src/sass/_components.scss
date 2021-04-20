@@ -16,10 +16,10 @@
 }
 
 .illustration-box-desktop {
-  // display: none;
+  display: none;
 
   @media screen and (min-width: $bp-large) {
-    // display: block;
+    display: block;
     position: absolute;
     z-index: 10;
     top: 16.8rem;
