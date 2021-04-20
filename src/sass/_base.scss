@@ -1,0 +1,61 @@
+// COLORS
+
+// Primary
+
+// 1) Text
+
+$color-very-dark-desat-blue: hsl(238, 29%, 16%);
+$color-soft-red: hsl(14, 88%, 65%);
+
+// 2) Gradient - Background
+
+$color-soft-violet: hsl(273, 75%, 66%);
+$color-soft-blue: hsl(240, 73%, 65%);
+
+// Neutral
+// 1) Text
+$color-very-dark-grayish-blue: hsl(237, 12%, 33%);
+$color-dark-grayish-blue: hsl(240, 6%, 50%);
+
+// 2) Dividers
+
+$color-light-grayish-blue: hsl(240, 5%, 91%);
+
+// TYPOGRAPHY
+
+// Body Copy
+
+$font-size-body: 12px;
+
+// Font
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// VIEWPORT
+$bp-largest: 87.5em; //1400px
+$bp-larger: 75em; //1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 53.125em; //850px
+$bp-small: 37.5em; //600px
+$bp-smallest: 23.44em; // 375px
+
+// BASE design
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 75%; // 1rem = 12px
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: no-repeat linear-gradient($color-soft-violet, $color-soft-blue);
+}

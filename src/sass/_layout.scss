@@ -1,0 +1,57 @@
+.container {
+  width: 27rem;
+  margin: 11rem auto;
+
+  background-color: white;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $bp-medium) {
+    width: 35rem;
+  }
+
+  @media screen and (min-width: $bp-large) {
+    width: 73.9rem;
+    min-height: 42.24rem;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $bp-larger) {
+    width: 76.8rem;
+  }
+
+  &--left {
+    position: relative;
+    background-image: url("../img/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @media screen and (min-width: $bp-large) {
+      background-image: url("../img/bg-pattern-desktop.svg");
+      background-attachment: local;
+      background-position: -48rem -24.5rem;
+    }
+  }
+
+  &--right {
+    padding: 4rem 2rem;
+    margin-top: -9rem;
+
+    @media screen and (min-width: $bp-medium) {
+      padding: 6rem 4rem;
+    }
+
+    @media screen and (min-width: $bp-large) {
+      flex: 0 0 45%;
+      margin-top: 0;
+      padding: 5.8rem 2.5rem 5.8rem 1rem;
+    }
+
+    @media screen and (min-width: $bp-larger) {
+      flex: 0 0 50%;
+      padding-right: 8rem;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.illustration-woman-online {
+  position: relative;
+  top: -8.8rem;
+  left: 1.2rem;
+
+  @media screen and (min-width: $bp-medium) {
+    left: 5.2rem;
+  }
+
+  @media screen and (min-width: $bp-large) {
+    clip-path: polygon(17.5% 0, 100% 0, 100% 100%, 17.5% 100%);
+
+    top: 5.7rem;
+    left: -6.95rem;
+  }
+}
+
+.illustration-box-desktop {
+  // display: none;
+
+  @media screen and (min-width: $bp-large) {
+    // display: block;
+    position: absolute;
+    z-index: 10;
+    top: 16.8rem;
+    left: -7.8rem;
+  }
+}
+
+.faq-box {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $color-light-grayish-blue;
+
+  & > label {
+    display: flex;
+    align-items: baseline;
+
+    &:hover {
+      @media screen and (min-width: $bp-large) {
+        cursor: pointer;
+
+        & > .question {
+          color: $color-soft-red;
+        }
+      }
+    }
+  }
+}
+
+.faq {
+  &__checkbox {
+    display: none;
+
+    &:checked {
+      & ~ .faq__btn {
+        & > .question {
+          font-weight: $font-weight-bold;
+          margin-bottom: 1rem;
+        }
+
+        & > img {
+          transform: rotate(180deg);
+        }
+      }
+
+      & ~ .answer {
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+    @media screen and (min-width: $bp-large) {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
